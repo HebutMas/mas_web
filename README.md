@@ -41,19 +41,22 @@
 
 ```
 web/
-├── index.html          # 首页 — 团队介绍、关注我们、导航入口
-├── members.html        # 战队成员 — 现任队员 & 往届队员信息
-├── open_source.html    # 项目开源 — RoboMaster 论坛 + GitHub 仓库展示
-├── photos.html         # 战队图集 — 图片画廊 + 灯箱浏览
-├── schedule.html       # 比赛赛程 — 2026 赛程 & 往届战绩
-├── contact.html        # 联系我们 — 地址、邮箱、社交链接 + 留言表单
+├── index.html          # 重定向 → html/index.html
 ├── style.css           # 全局样式表
-├── nav.js              # 导航栏交互（响应式菜单）
-├── script.js           # 全局脚本
-├── members.js          # 战队成员数据 & 动态渲染
-├── open_source.js      # GitHub 仓库 & 论坛数据动态加载
-├── photos.js           # 图集数据 & 动态渲染
-├── easter_egg.js       # 彩蛋脚本
+├── html/               # 页面文件
+│   ├── index.html      # 首页 — 团队介绍、关注我们、导航入口
+│   ├── members.html    # 战队成员 — 现任队员 & 往届队员信息
+│   ├── open_source.html # 项目开源 — RoboMaster 论坛 + GitHub 仓库展示
+│   ├── photos.html     # 战队图集 — 图片画廊 + 灯箱浏览
+│   ├── schedule.html   # 比赛赛程 — 赛季历程 & 荣誉
+│   └── contact.html    # 联系我们 — 地址、邮箱、社交链接 + 留言表单
+├── js/                 # 脚本文件
+│   ├── nav.js          # 导航栏交互（响应式菜单）
+│   ├── script.js       # 全局脚本
+│   ├── members.js      # 战队成员数据 & 动态渲染
+│   ├── open_source.js  # GitHub 仓库 & 论坛数据动态加载
+│   ├── photos.js       # 图集数据 & 动态渲染
+│   └── easter_egg.js   # 彩蛋脚本
 └── source/             # 静态资源
     ├── logo/           # Logo 图片
     ├── banner/         # 首页横幅图片
