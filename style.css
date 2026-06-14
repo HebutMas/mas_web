@@ -20,7 +20,7 @@
     --accent-glow: rgba(59, 130, 246, 0.25);
     --card-bg: #1e293b;
     --card-border: rgba(59, 130, 246, 0.15);
-    --nav-bg: rgba(15, 23, 42, 0.92);
+    --nav-bg: rgba(255, 255, 255, 0.92);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
     --radius-sm: 8px;
@@ -73,15 +73,15 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: var(--nav-bg);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--card-border);
+    border-bottom: 1px solid #e2e8f0;
     transition: box-shadow 0.3s ease;
 }
 
 header.scrolled {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 nav {
@@ -111,6 +111,7 @@ nav ul li a {
     letter-spacing: 1px;
     position: relative;
     padding: 5px 0;
+    color: #1e293b;
 }
 
 nav ul li a::after {
@@ -1326,7 +1327,7 @@ footer h3 {
 }
 
 .menu-toggle span {
-    background-color: var(--text-color);
+    background-color: #1e293b;
 }
 
 /* ==========================================
