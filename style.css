@@ -1198,26 +1198,26 @@ footer h3 {
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 15px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.14);
     padding: 12px 20px;
     border-radius: 8px;
     transition: background 0.3s ease;
 }
 
 .school-logo a:hover, .partners-list a:hover {
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.22);
 }
 
 .school-logo img, .partners-list img {
     height: 55px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0.9) grayscale(0.3);
+    filter: brightness(1) grayscale(0);
     transition: filter 0.3s ease;
 }
 
 .school-logo img:hover, .partners-list img:hover {
-    filter: brightness(1) grayscale(0);
+    filter: brightness(1.1);
 }
 
 .partners-footer p {
@@ -1286,16 +1286,6 @@ footer h3 {
 .contact-btn:hover img,
 .social-links a:hover img {
     filter: none;
-}
-
-.school-logo img,
-.partners-list img {
-    filter: brightness(0.85) grayscale(0.2);
-}
-
-.school-logo img:hover,
-.partners-list img:hover {
-    filter: brightness(1.05) grayscale(0);
 }
 
 .page-header {
