@@ -11,26 +11,7 @@
 :root {
     --font-sans: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
 
-    /* 浅色主题 (默认) */
-    --bg-color: #f4f7fb;
-    --text-color: #1a202c;
-    --text-muted: #64748b;
-    --accent-color: #0056b3;
-    --accent-hover: #007bff;
-    --accent-glow: rgba(0, 86, 179, 0.25);
-    --card-bg: #ffffff;
-    --card-border: rgba(0, 86, 179, 0.12);
-    --nav-bg: rgba(255, 255, 255, 0.88);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.10);
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 16px;
-    --transition-base: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* 深色主题 */
-html[data-theme="dark"] {
+    /* 深色主题 (默认) */
     --bg-color: #0f172a;
     --text-color: #e2e8f0;
     --text-muted: #94a3b8;
@@ -42,6 +23,10 @@ html[data-theme="dark"] {
     --nav-bg: rgba(15, 23, 42, 0.92);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --transition-base: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 *, *::before, *::after {
@@ -208,7 +193,7 @@ nav ul li a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(244,247,251,0.15) 0%, rgba(244,247,251,0.6) 60%, var(--bg-color) 100%);
+    background: linear-gradient(to bottom, rgba(15,23,42,0.15) 0%, rgba(15,23,42,0.6) 60%, var(--bg-color) 100%);
     z-index: -1;
 }
 
@@ -1291,77 +1276,42 @@ footer h3 {
 }
 
 /* ==========================================
-   14.5 深色模式切换按钮
+   14.5 深色模式细节修正
    ========================================== */
-.theme-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1px solid var(--card-border);
-    background: var(--card-bg);
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: all var(--transition-base);
-    margin-left: auto;
-    margin-right: 16px;
-    color: var(--text-color);
-}
-
-.theme-toggle:hover {
-    transform: scale(1.08);
-    box-shadow: var(--shadow-sm);
-}
-
-@media (max-width: 968px) {
-    .theme-toggle {
-        margin-right: 12px;
-    }
-}
-
-/* ==========================================
-   14.6 深色模式细节修正
-   ========================================== */
-html[data-theme="dark"] .intro::before {
-    background: linear-gradient(to bottom, rgba(15,23,42,0.15) 0%, rgba(15,23,42,0.6) 60%, var(--bg-color) 100%);
-}
-
-html[data-theme="dark"] .contact-btn img,
-html[data-theme="dark"] .social-links img {
+.contact-btn img,
+.social-links img {
     filter: brightness(0) invert(1);
 }
 
-html[data-theme="dark"] .contact-btn:hover img,
-html[data-theme="dark"] .social-links a:hover img {
+.contact-btn:hover img,
+.social-links a:hover img {
     filter: none;
 }
 
-html[data-theme="dark"] .school-logo img,
-html[data-theme="dark"] .partners-list img {
+.school-logo img,
+.partners-list img {
     filter: brightness(0.85) grayscale(0.2);
 }
 
-html[data-theme="dark"] .school-logo img:hover,
-html[data-theme="dark"] .partners-list img:hover {
+.school-logo img:hover,
+.partners-list img:hover {
     filter: brightness(1.05) grayscale(0);
 }
 
-html[data-theme="dark"] .page-header {
+.page-header {
     background: linear-gradient(180deg, rgba(59,130,246,0.06) 0%, transparent 100%);
 }
 
-html[data-theme="dark"] #repo-search-input {
+#repo-search-input {
     background: var(--card-bg);
     color: var(--text-color);
 }
 
-html[data-theme="dark"] .forum-card-icon {
+.forum-card-icon {
     background: linear-gradient(135deg, rgba(232,115,58,0.2), rgba(212,101,42,0.15));
 }
 
-html[data-theme="dark"] .menu-toggle span {
+.menu-toggle span {
     background-color: var(--text-color);
 }
 
